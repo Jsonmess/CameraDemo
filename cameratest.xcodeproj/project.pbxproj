@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC47652119F1081F00FFF4E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC47652019F1081F00FFF4E5 /* Foundation.framework */; };
+		BC47652319F1081F00FFF4E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC47652219F1081F00FFF4E5 /* CoreGraphics.framework */; };
+		BC47652519F1081F00FFF4E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC47652419F1081F00FFF4E5 /* UIKit.framework */; };
+		BC47652B19F1081F00FFF4E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC47652919F1081F00FFF4E5 /* InfoPlist.strings */; };
+		BC47652D19F1081F00FFF4E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC47652C19F1081F00FFF4E5 /* main.m */; };
+		BC47653119F1081F00FFF4E5 /* JSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC47653019F1081F00FFF4E5 /* JSAppDelegate.m */; };
+		BC47653419F1081F00FFF4E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC47653219F1081F00FFF4E5 /* Main.storyboard */; };
+		BC47653719F1081F00FFF4E5 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC47653619F1081F00FFF4E5 /* JSViewController.m */; };
+		BC47653919F1081F00FFF4E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC47653819F1081F00FFF4E5 /* Images.xcassets */; };
+		BC47654019F1081F00FFF4E5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC47653F19F1081F00FFF4E5 /* XCTest.framework */; };
+		BC47654119F1081F00FFF4E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC47652019F1081F00FFF4E5 /* Foundation.framework */; };
+		BC47654219F1081F00FFF4E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC47652419F1081F00FFF4E5 /* UIKit.framework */; };
+		BC47654A19F1081F00FFF4E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC47654819F1081F00FFF4E5 /* InfoPlist.strings */; };
+		BC47654C19F1081F00FFF4E5 /* cameratestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC47654B19F1081F00FFF4E5 /* cameratestTests.m */; };
+		BC47655C19F11F7B00FFF4E5 /* JSCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC47655A19F11F7B00FFF4E5 /* JSCameraController.m */; };
+		BC47655D19F11F7B00FFF4E5 /* JSCameraController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC47655B19F11F7B00FFF4E5 /* JSCameraController.xib */; };
+		BC47657319F11FA800FFF4E5 /* flash-auto.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47655F19F11FA800FFF4E5 /* flash-auto.png */; };
+		BC47657419F11FA800FFF4E5 /* flash-auto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656019F11FA800FFF4E5 /* flash-auto@2x.png */; };
+		BC47657519F11FA800FFF4E5 /* flash-off.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656119F11FA800FFF4E5 /* flash-off.png */; };
+		BC47657619F11FA800FFF4E5 /* flash-off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656219F11FA800FFF4E5 /* flash-off@2x.png */; };
+		BC47657719F11FA800FFF4E5 /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656319F11FA800FFF4E5 /* flash.png */; };
+		BC47657819F11FA800FFF4E5 /* flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656419F11FA800FFF4E5 /* flash@2x.png */; };
+		BC47657919F11FA800FFF4E5 /* focus-crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656519F11FA800FFF4E5 /* focus-crosshair.png */; };
+		BC47657A19F11FA800FFF4E5 /* focus-crosshair@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656619F11FA800FFF4E5 /* focus-crosshair@2x.png */; };
+		BC47657B19F11FA800FFF4E5 /* front-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656719F11FA800FFF4E5 /* front-camera.png */; };
+		BC47657C19F11FA800FFF4E5 /* front-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656819F11FA800FFF4E5 /* front-camera@2x.png */; };
+		BC47657D19F11FA800FFF4E5 /* grid-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656919F11FA800FFF4E5 /* grid-icon.png */; };
+		BC47657E19F11FA800FFF4E5 /* grid-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656A19F11FA800FFF4E5 /* grid-icon@2x.png */; };
+		BC47657F19F11FA800FFF4E5 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656B19F11FA800FFF4E5 /* grid.png */; };
+		BC47658019F11FA800FFF4E5 /* grid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656C19F11FA800FFF4E5 /* grid@2x.png */; };
+		BC47658119F11FA800FFF4E5 /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656D19F11FA800FFF4E5 /* library.png */; };
+		BC47658219F11FA800FFF4E5 /* library@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656E19F11FA800FFF4E5 /* library@2x.png */; };
+		BC47658319F11FA800FFF4E5 /* micro_carbon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47656F19F11FA800FFF4E5 /* micro_carbon.png */; };
+		BC47658419F11FA800FFF4E5 /* micro_carbon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47657019F11FA800FFF4E5 /* micro_carbon@2x.png */; };
+		BC47658519F11FA800FFF4E5 /* take-snap.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47657119F11FA800FFF4E5 /* take-snap.png */; };
+		BC47658619F11FA800FFF4E5 /* take-snap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC47657219F11FA800FFF4E5 /* take-snap@2x.png */; };
+		BC47658C19F1535800FFF4E5 /* JSCameraOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC47658B19F1535800FFF4E5 /* JSCameraOperationManager.m */; };
+		BC47658E19F156EA00FFF4E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC47658D19F156EA00FFF4E5 /* AVFoundation.framework */; };
+		BC47659219F1579C00FFF4E5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC47659119F1579C00FFF4E5 /* AssetsLibrary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC47654319F1081F00FFF4E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC47651519F1081F00FFF4E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC47651C19F1081F00FFF4E5;
+			remoteInfo = cameratest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC47651D19F1081F00FFF4E5 /* cameratest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cameratest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC47652019F1081F00FFF4E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC47652219F1081F00FFF4E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BC47652419F1081F00FFF4E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BC47652819F1081F00FFF4E5 /* cameratest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cameratest-Info.plist"; sourceTree = "<group>"; };
+		BC47652A19F1081F00FFF4E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC47652C19F1081F00FFF4E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC47652E19F1081F00FFF4E5 /* cameratest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cameratest-Prefix.pch"; sourceTree = "<group>"; };
+		BC47652F19F1081F00FFF4E5 /* JSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSAppDelegate.h; sourceTree = "<group>"; };
+		BC47653019F1081F00FFF4E5 /* JSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSAppDelegate.m; sourceTree = "<group>"; };
+		BC47653319F1081F00FFF4E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC47653519F1081F00FFF4E5 /* JSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		BC47653619F1081F00FFF4E5 /* JSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
+		BC47653819F1081F00FFF4E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BC47653E19F1081F00FFF4E5 /* cameratestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cameratestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC47653F19F1081F00FFF4E5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BC47654719F1081F00FFF4E5 /* cameratestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cameratestTests-Info.plist"; sourceTree = "<group>"; };
+		BC47654919F1081F00FFF4E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC47654B19F1081F00FFF4E5 /* cameratestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cameratestTests.m; sourceTree = "<group>"; };
+		BC47655919F11F7B00FFF4E5 /* JSCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCameraController.h; sourceTree = "<group>"; };
+		BC47655A19F11F7B00FFF4E5 /* JSCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCameraController.m; sourceTree = "<group>"; };
+		BC47655B19F11F7B00FFF4E5 /* JSCameraController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSCameraController.xib; sourceTree = "<group>"; };
+		BC47655F19F11FA800FFF4E5 /* flash-auto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash-auto.png"; sourceTree = "<group>"; };
+		BC47656019F11FA800FFF4E5 /* flash-auto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash-auto@2x.png"; sourceTree = "<group>"; };
+		BC47656119F11FA800FFF4E5 /* flash-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash-off.png"; sourceTree = "<group>"; };
+		BC47656219F11FA800FFF4E5 /* flash-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash-off@2x.png"; sourceTree = "<group>"; };
+		BC47656319F11FA800FFF4E5 /* flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flash.png; sourceTree = "<group>"; };
+		BC47656419F11FA800FFF4E5 /* flash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash@2x.png"; sourceTree = "<group>"; };
+		BC47656519F11FA800FFF4E5 /* focus-crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "focus-crosshair.png"; sourceTree = "<group>"; };
+		BC47656619F11FA800FFF4E5 /* focus-crosshair@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "focus-crosshair@2x.png"; sourceTree = "<group>"; };
+		BC47656719F11FA800FFF4E5 /* front-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "front-camera.png"; sourceTree = "<group>"; };
+		BC47656819F11FA800FFF4E5 /* front-camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "front-camera@2x.png"; sourceTree = "<group>"; };
+		BC47656919F11FA800FFF4E5 /* grid-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grid-icon.png"; sourceTree = "<group>"; };
+		BC47656A19F11FA800FFF4E5 /* grid-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grid-icon@2x.png"; sourceTree = "<group>"; };
+		BC47656B19F11FA800FFF4E5 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		BC47656C19F11FA800FFF4E5 /* grid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grid@2x.png"; sourceTree = "<group>"; };
+		BC47656D19F11FA800FFF4E5 /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library.png; sourceTree = "<group>"; };
+		BC47656E19F11FA800FFF4E5 /* library@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "library@2x.png"; sourceTree = "<group>"; };
+		BC47656F19F11FA800FFF4E5 /* micro_carbon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = micro_carbon.png; sourceTree = "<group>"; };
+		BC47657019F11FA800FFF4E5 /* micro_carbon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "micro_carbon@2x.png"; sourceTree = "<group>"; };
+		BC47657119F11FA800FFF4E5 /* take-snap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "take-snap.png"; sourceTree = "<group>"; };
+		BC47657219F11FA800FFF4E5 /* take-snap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "take-snap@2x.png"; sourceTree = "<group>"; };
+		BC47658819F127F700FFF4E5 /* JSCameraControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCameraControllerDelegate.h; sourceTree = "<group>"; };
+		BC47658A19F1535800FFF4E5 /* JSCameraOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCameraOperationManager.h; sourceTree = "<group>"; };
+		BC47658B19F1535800FFF4E5 /* JSCameraOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCameraOperationManager.m; sourceTree = "<group>"; };
+		BC47658D19F156EA00FFF4E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BC47659119F1579C00FFF4E5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC47651A19F1081F00FFF4E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC47659219F1579C00FFF4E5 /* AssetsLibrary.framework in Frameworks */,
+				BC47658E19F156EA00FFF4E5 /* AVFoundation.framework in Frameworks */,
+				BC47652319F1081F00FFF4E5 /* CoreGraphics.framework in Frameworks */,
+				BC47652519F1081F00FFF4E5 /* UIKit.framework in Frameworks */,
+				BC47652119F1081F00FFF4E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC47653B19F1081F00FFF4E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC47654019F1081F00FFF4E5 /* XCTest.framework in Frameworks */,
+				BC47654219F1081F00FFF4E5 /* UIKit.framework in Frameworks */,
+				BC47654119F1081F00FFF4E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC47651419F1081E00FFF4E5 = {
+			isa = PBXGroup;
+			children = (
+				BC47652619F1081F00FFF4E5 /* cameratest */,
+				BC47654519F1081F00FFF4E5 /* cameratestTests */,
+				BC47651F19F1081F00FFF4E5 /* Frameworks */,
+				BC47651E19F1081F00FFF4E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC47651E19F1081F00FFF4E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC47651D19F1081F00FFF4E5 /* cameratest.app */,
+				BC47653E19F1081F00FFF4E5 /* cameratestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC47651F19F1081F00FFF4E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC47659119F1579C00FFF4E5 /* AssetsLibrary.framework */,
+				BC47658D19F156EA00FFF4E5 /* AVFoundation.framework */,
+				BC47652019F1081F00FFF4E5 /* Foundation.framework */,
+				BC47652219F1081F00FFF4E5 /* CoreGraphics.framework */,
+				BC47652419F1081F00FFF4E5 /* UIKit.framework */,
+				BC47653F19F1081F00FFF4E5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC47652619F1081F00FFF4E5 /* cameratest */ = {
+			isa = PBXGroup;
+			children = (
+				BC47655519F11F1F00FFF4E5 /* jsoncamera */,
+				BC47652F19F1081F00FFF4E5 /* JSAppDelegate.h */,
+				BC47653019F1081F00FFF4E5 /* JSAppDelegate.m */,
+				BC47653219F1081F00FFF4E5 /* Main.storyboard */,
+				BC47653519F1081F00FFF4E5 /* JSViewController.h */,
+				BC47653619F1081F00FFF4E5 /* JSViewController.m */,
+				BC47655E19F11FA800FFF4E5 /* UI */,
+				BC47653819F1081F00FFF4E5 /* Images.xcassets */,
+				BC47652719F1081F00FFF4E5 /* Supporting Files */,
+			);
+			path = cameratest;
+			sourceTree = "<group>";
+		};
+		BC47652719F1081F00FFF4E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC47652819F1081F00FFF4E5 /* cameratest-Info.plist */,
+				BC47652919F1081F00FFF4E5 /* InfoPlist.strings */,
+				BC47652C19F1081F00FFF4E5 /* main.m */,
+				BC47652E19F1081F00FFF4E5 /* cameratest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC47654519F1081F00FFF4E5 /* cameratestTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC47654B19F1081F00FFF4E5 /* cameratestTests.m */,
+				BC47654619F1081F00FFF4E5 /* Supporting Files */,
+			);
+			path = cameratestTests;
+			sourceTree = "<group>";
+		};
+		BC47654619F1081F00FFF4E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC47654719F1081F00FFF4E5 /* cameratestTests-Info.plist */,
+				BC47654819F1081F00FFF4E5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC47655519F11F1F00FFF4E5 /* jsoncamera */ = {
+			isa = PBXGroup;
+			children = (
+				BC47658919F1532800FFF4E5 /* Manager */,
+				BC47658719F127C900FFF4E5 /* Protocol */,
+				BC47655919F11F7B00FFF4E5 /* JSCameraController.h */,
+				BC47655A19F11F7B00FFF4E5 /* JSCameraController.m */,
+				BC47655B19F11F7B00FFF4E5 /* JSCameraController.xib */,
+			);
+			name = jsoncamera;
+			sourceTree = "<group>";
+		};
+		BC47655E19F11FA800FFF4E5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BC47655F19F11FA800FFF4E5 /* flash-auto.png */,
+				BC47656019F11FA800FFF4E5 /* flash-auto@2x.png */,
+				BC47656119F11FA800FFF4E5 /* flash-off.png */,
+				BC47656219F11FA800FFF4E5 /* flash-off@2x.png */,
+				BC47656319F11FA800FFF4E5 /* flash.png */,
+				BC47656419F11FA800FFF4E5 /* flash@2x.png */,
+				BC47656519F11FA800FFF4E5 /* focus-crosshair.png */,
+				BC47656619F11FA800FFF4E5 /* focus-crosshair@2x.png */,
+				BC47656719F11FA800FFF4E5 /* front-camera.png */,
+				BC47656819F11FA800FFF4E5 /* front-camera@2x.png */,
+				BC47656919F11FA800FFF4E5 /* grid-icon.png */,
+				BC47656A19F11FA800FFF4E5 /* grid-icon@2x.png */,
+				BC47656B19F11FA800FFF4E5 /* grid.png */,
+				BC47656C19F11FA800FFF4E5 /* grid@2x.png */,
+				BC47656D19F11FA800FFF4E5 /* library.png */,
+				BC47656E19F11FA800FFF4E5 /* library@2x.png */,
+				BC47656F19F11FA800FFF4E5 /* micro_carbon.png */,
+				BC47657019F11FA800FFF4E5 /* micro_carbon@2x.png */,
+				BC47657119F11FA800FFF4E5 /* take-snap.png */,
+				BC47657219F11FA800FFF4E5 /* take-snap@2x.png */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BC47658719F127C900FFF4E5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BC47658819F127F700FFF4E5 /* JSCameraControllerDelegate.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		BC47658919F1532800FFF4E5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BC47658A19F1535800FFF4E5 /* JSCameraOperationManager.h */,
+				BC47658B19F1535800FFF4E5 /* JSCameraOperationManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC47651C19F1081F00FFF4E5 /* cameratest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC47654F19F1081F00FFF4E5 /* Build configuration list for PBXNativeTarget "cameratest" */;
+			buildPhases = (
+				BC47651919F1081F00FFF4E5 /* Sources */,
+				BC47651A19F1081F00FFF4E5 /* Frameworks */,
+				BC47651B19F1081F00FFF4E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cameratest;
+			productName = cameratest;
+			productReference = BC47651D19F1081F00FFF4E5 /* cameratest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC47653D19F1081F00FFF4E5 /* cameratestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC47655219F1081F00FFF4E5 /* Build configuration list for PBXNativeTarget "cameratestTests" */;
+			buildPhases = (
+				BC47653A19F1081F00FFF4E5 /* Sources */,
+				BC47653B19F1081F00FFF4E5 /* Frameworks */,
+				BC47653C19F1081F00FFF4E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC47654419F1081F00FFF4E5 /* PBXTargetDependency */,
+			);
+			name = cameratestTests;
+			productName = cameratestTests;
+			productReference = BC47653E19F1081F00FFF4E5 /* cameratestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC47651519F1081F00FFF4E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Jsonmess;
+				TargetAttributes = {
+					BC47653D19F1081F00FFF4E5 = {
+						TestTargetID = BC47651C19F1081F00FFF4E5;
+					};
+				};
+			};
+			buildConfigurationList = BC47651819F1081F00FFF4E5 /* Build configuration list for PBXProject "cameratest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC47651419F1081E00FFF4E5;
+			productRefGroup = BC47651E19F1081F00FFF4E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC47651C19F1081F00FFF4E5 /* cameratest */,
+				BC47653D19F1081F00FFF4E5 /* cameratestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC47651B19F1081F00FFF4E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC47653919F1081F00FFF4E5 /* Images.xcassets in Resources */,
+				BC47658619F11FA800FFF4E5 /* take-snap@2x.png in Resources */,
+				BC47657519F11FA800FFF4E5 /* flash-off.png in Resources */,
+				BC47657A19F11FA800FFF4E5 /* focus-crosshair@2x.png in Resources */,
+				BC47655D19F11F7B00FFF4E5 /* JSCameraController.xib in Resources */,
+				BC47658319F11FA800FFF4E5 /* micro_carbon.png in Resources */,
+				BC47658219F11FA800FFF4E5 /* library@2x.png in Resources */,
+				BC47657719F11FA800FFF4E5 /* flash.png in Resources */,
+				BC47657619F11FA800FFF4E5 /* flash-off@2x.png in Resources */,
+				BC47658519F11FA800FFF4E5 /* take-snap.png in Resources */,
+				BC47657419F11FA800FFF4E5 /* flash-auto@2x.png in Resources */,
+				BC47652B19F1081F00FFF4E5 /* InfoPlist.strings in Resources */,
+				BC47657819F11FA800FFF4E5 /* flash@2x.png in Resources */,
+				BC47657F19F11FA800FFF4E5 /* grid.png in Resources */,
+				BC47657E19F11FA800FFF4E5 /* grid-icon@2x.png in Resources */,
+				BC47657C19F11FA800FFF4E5 /* front-camera@2x.png in Resources */,
+				BC47658019F11FA800FFF4E5 /* grid@2x.png in Resources */,
+				BC47657D19F11FA800FFF4E5 /* grid-icon.png in Resources */,
+				BC47653419F1081F00FFF4E5 /* Main.storyboard in Resources */,
+				BC47657919F11FA800FFF4E5 /* focus-crosshair.png in Resources */,
+				BC47658119F11FA800FFF4E5 /* library.png in Resources */,
+				BC47657319F11FA800FFF4E5 /* flash-auto.png in Resources */,
+				BC47658419F11FA800FFF4E5 /* micro_carbon@2x.png in Resources */,
+				BC47657B19F11FA800FFF4E5 /* front-camera.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC47653C19F1081F00FFF4E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC47654A19F1081F00FFF4E5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC47651919F1081F00FFF4E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC47652D19F1081F00FFF4E5 /* main.m in Sources */,
+				BC47655C19F11F7B00FFF4E5 /* JSCameraController.m in Sources */,
+				BC47658C19F1535800FFF4E5 /* JSCameraOperationManager.m in Sources */,
+				BC47653719F1081F00FFF4E5 /* JSViewController.m in Sources */,
+				BC47653119F1081F00FFF4E5 /* JSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC47653A19F1081F00FFF4E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC47654C19F1081F00FFF4E5 /* cameratestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC47654419F1081F00FFF4E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC47651C19F1081F00FFF4E5 /* cameratest */;
+			targetProxy = BC47654319F1081F00FFF4E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC47652919F1081F00FFF4E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC47652A19F1081F00FFF4E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BC47653219F1081F00FFF4E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC47653319F1081F00FFF4E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC47654819F1081F00FFF4E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC47654919F1081F00FFF4E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC47654D19F1081F00FFF4E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC47654E19F1081F00FFF4E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC47655019F1081F00FFF4E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cameratest/cameratest-Prefix.pch";
+				INFOPLIST_FILE = "cameratest/cameratest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BC47655119F1081F00FFF4E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cameratest/cameratest-Prefix.pch";
+				INFOPLIST_FILE = "cameratest/cameratest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BC47655319F1081F00FFF4E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cameratest.app/cameratest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cameratest/cameratest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "cameratestTests/cameratestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BC47655419F1081F00FFF4E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cameratest.app/cameratest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cameratest/cameratest-Prefix.pch";
+				INFOPLIST_FILE = "cameratestTests/cameratestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC47651819F1081F00FFF4E5 /* Build configuration list for PBXProject "cameratest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC47654D19F1081F00FFF4E5 /* Debug */,
+				BC47654E19F1081F00FFF4E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC47654F19F1081F00FFF4E5 /* Build configuration list for PBXNativeTarget "cameratest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC47655019F1081F00FFF4E5 /* Debug */,
+				BC47655119F1081F00FFF4E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC47655219F1081F00FFF4E5 /* Build configuration list for PBXNativeTarget "cameratestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC47655319F1081F00FFF4E5 /* Debug */,
+				BC47655419F1081F00FFF4E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC47651519F1081F00FFF4E5 /* Project object */;
+}
